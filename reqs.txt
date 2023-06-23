@@ -1,0 +1,6 @@
+opencv-python
+flask
+ultralytics
+pafy
+flask_socketio
+git+https://github.com/ytdl-org/youtube-dl.git
