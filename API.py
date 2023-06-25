@@ -15,7 +15,8 @@ socketio = SocketIO(app)
 # url = "https://www.youtube.com/watch?v=01guY9qxzWk"
 # video = pafy.new(url)
 # best = video.getbest(preftype="mp4")
-cap = cv2.VideoCapture("rtmp://46.151.211.6:1935/camera1?Username:root&Password:n#mR6NZ*%N9zus77")
+url = 'rtmp://46.151.211.6:1935/camera1?Username:root&Password:n#mR6NZ*%N9zus77'
+cap = cv2.VideoCapture(url)
 
 final_frame_count = {'person': 0, 'bicycle': 0, 'car': 0, 'bike': 0, 'airplane': 0, 'bus': 0}
 
