@@ -10,7 +10,7 @@ def save_rtmp_stream(url, output_file):
         return
 
     # Get the video codec and create a VideoWriter object to save the stream
-    codec = cv2.VideoWriter_fourcc(*'XVID')
+    codec = cv2.VideoWriter_fourcc(*'MJPG')
     output = cv2.VideoWriter(output_file, codec, 30.0, (1280, 960))
 
     while True:
@@ -35,5 +35,5 @@ def save_rtmp_stream(url, output_file):
 
 # Example usage
 url = 'rtmp://46.151.211.6:1935/camera1?Username:root&Password:n#mR6NZ*%N9zus77'  # Replace with your RTMP stream URL
-output_file = 'output.mp4'  # Replace with the desired output file path
+output_file = 'output.avi'  # Replace with the desired output file path
 save_rtmp_stream(url, output_file)
